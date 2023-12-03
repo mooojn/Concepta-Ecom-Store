@@ -222,6 +222,9 @@ ul{
     color: white;
     font-size: 30px;
 }
+.footerIcons a:visited {
+    color: inherit;
+}
 .fa-youtube-play:hover{
     color: red;
 }
@@ -234,6 +237,9 @@ ul{
 .fa-twitter:hover{
     color: #1DA1F2;
 }
+/* .fa-twitter{
+    color: white;
+} */
 /* About page */
 .aboutBody{
     width: 100%;
