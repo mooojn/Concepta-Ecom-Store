@@ -219,8 +219,13 @@ ul{
 }
 /* footer icons */
 .footerIcons{
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 30px;
+}
+.footerIcons li{
+    margin: 0 10px ;
 }
 .footerIcons a:visited {
     color: inherit;
