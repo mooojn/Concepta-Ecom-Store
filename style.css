@@ -217,6 +217,23 @@ ul{
     width: 25px;
     height: 25px;
 }
+/* footer icons */
+.footerIcons{
+    color: white;
+    font-size: 30px;
+}
+.fa-youtube-play:hover{
+    color: red;
+}
+.fa-facebook-official:hover {
+    color: #1877F2;
+}
+.fa-instagram:hover{
+    color: #E1306C;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
 /* About page */
 .aboutBody{
     width: 100%;
