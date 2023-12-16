@@ -40,11 +40,11 @@
 
 #account{
 font-size: 17px;
-background-color: #42b72a;
+background-color: #eb2723;
 }
 
 #account:hover{
-    background-color: #40992f;
+    background-color: #b70505;
 }
 /* ///// Individual Properities///// */
 *{
