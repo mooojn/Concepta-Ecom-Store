@@ -18,14 +18,14 @@
             </div>
             <div class="login-area">
                 <div class="form">
-                    <form action="">
+                    <form>
                         <input type="text" name="email" id="email" class="input"
-                            placeholder="Email address or Phone Number"><br><br>
+                            placeholder="Email address"><br><br>
                         <input type="text" class="input" id="pass" placeholder="Password"><br><br>
-                        <button class="buttons" id="b1">Log In</button><br><br>
-                        <a href="#" class="text">Forgotten password?</a>
+                        <button class="buttons" id="b1" onclick="event.preventDefault();">Log In</button><br><br>
+                        <p class="text">Forgotten password?</p>
                         <hr style="margin-top:9px"><br>
-                        <button class="buttons" id="account">Create New Account</button>
+                        <button class="buttons" id="account" onclick="event.preventDefault();">Create New Account</button>
                     </form>
                 </div>
                 <script src="index.js"></script>
