@@ -586,6 +586,15 @@ button:hover span {
     background-size: cover;
     background-position: center;
 }
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 5px;
+    margin: 20px;
+}
+
 .ShopProducts {
     display: flex;
     flex-wrap: wrap;
@@ -594,17 +603,23 @@ button:hover span {
 
 .ShopProducts img {
     cursor: pointer;
-    width: 15%;
-    padding: 5px;
-    margin: 20px;
-    transition: transform 1s; /* Moved transition property here */
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* This will ensure the aspect ratio of the image is maintained */
+    transition: transform 1s; 
 }
 
 .ShopProducts img:hover {
-    transform: scale(1.05); /* Reduced scale effect */
+    transform: scale(1.05); 
 }
 
 .ShopProducts img:active {
-    transform: scale(1.1); /* Scale up effect */
-    transition: transform 0.1s; /* Faster transition when clicked */
+    transform: scale(1.1); 
+    transition: transform 0.1s; 
+}
+
+.ShopP {
+    text-align: center;
+    margin-top: 10px; /* Reduced margin-top to bring price closer to image */
+    color: white;
 }
