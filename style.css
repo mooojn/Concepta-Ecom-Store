@@ -577,4 +577,34 @@ button:hover {
 button:hover span {
     width: 100%;
 }
+/* ///////////////////  Shop    /////////////////////////// */
+.Shopmain{
+    width: 100%;
+    height: 100vh;
+    background-image: url("websiteImages/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ShopProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.ShopProducts img {
+    cursor: pointer;
+    width: 15%;
+    padding: 5px;
+    margin: 20px;
+    transition: transform 1s; /* Moved transition property here */
+}
+
+.ShopProducts img:hover {
+    transform: scale(1.05); /* Reduced scale effect */
+}
+
+.ShopProducts img:active {
+    transform: scale(1.1); /* Scale up effect */
+    transition: transform 0.1s; /* Faster transition when clicked */
+}
