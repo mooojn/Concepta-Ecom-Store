@@ -173,3 +173,57 @@ background-color: #eb2723;
     transition-timing-function: cubic-bezier(0.08, 0.52, 0.52, 1), cubic-bezier(0.08, 0.52, 0.52, 1), cubic-bezier(0.08, 0.52, 0.52, 1);
     transition-delay: 0s, 0s, 0s;
 }
+/* button go back */
+.aboutBtn{
+    margin-left: 90vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 100px;
+    position: center;
+    text-align: center;
+}
+.aboutBtn a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.aboutBtn:hover{
+    background-color: red;
+    color: white;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid red; 
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s; 
+}
+
+span {
+    background: red;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover {
+    border: 2px solid transparent; 
+}
+
+button:hover span {
+    width: 100%;
+}
+
