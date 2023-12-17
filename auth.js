@@ -9,7 +9,7 @@ function login() {
         if (email == usernames[i] && password == passwords[i]) {
             found = true;
             alert('You are logged in ' + email);
-            window.location.href = "./index.html";
+            myFunc();
             break;
         }
     }
@@ -27,9 +27,12 @@ function signup(){
         usernames.push(email);
         passwords.push(password);
         alert('You are signed up ' + email);
-        window.location.href = "./index.html";
+        myFunc();
     }
     else{
         alert('Passwords do not match');
     }
+}
+function myFunc(){
+    window.location.href = "./index.html";
 }
