@@ -1,17 +1,23 @@
+/* /// on whole page font set and no margin or padding as default */
 *{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
-
+/* back ground */
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: url(websiteImages/bg.jpg);
-    
+    background-image: url(websiteImages/bg.jpg); 
     background-size: cover;
     background-position: center;
 }
+/* logo img */
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+/* naviagation bar */
 .navbar{
     width: 85%;
     margin: auto;
@@ -20,21 +26,20 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo{
-    width: 150px;
-    cursor: pointer;
-}
+/* removing the list icon and placing them in single line */
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
+/* removing anchor tag color from the list */
 .navbar ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
+/* when hovered below the nav bar a red bar appears */
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -45,14 +50,16 @@
     bottom: -10px;
     transition: 0.5s;
 }
+/* hover bar width max */
 .navbar ul li:hover::after{
     width: 100%;
 }
+/* content just below the navbar setting its position */
 .content{
     width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);  /* centering the element */
     text-align: center;
     color: white;
 }
@@ -65,9 +72,7 @@
     font-weight: 100;
     line-height: 25px;
 }
-
-/* button hovering effects */
-
+/* button intial settings */
 button {
     width: 200px;
     padding: 15px 0;
@@ -83,7 +88,7 @@ button {
     overflow: hidden;
     transition: all 0.5s; 
 }
-
+/* used to create the animated bg color change of button when hovered */
 span {
     background: red;
     height: 100%;
@@ -95,40 +100,15 @@ span {
     z-index: -1;
     transition: 0.5s;
 }
-
+/* makes the border bright when hovered */
 button:hover {
     border: 2px solid transparent; 
 }
-
+/* applies the span style  */
 button:hover span {
     width: 100%;
 }
-
-
-/* Products */
-.col1{
-    flex-basis:25%;
-    padding:10px ;
-    min-width: 250px;
-    margin-bottom: 50px;
-
-}
-.col1 img{
-    width: 100%;
-    height: 100%;
-}
-.col2{
-    flex-basis:25%;
-    padding:10px ;
-    min-width: 250px;
-    margin-bottom: 50px;
-
-}
-
-.col2 img{
-    width: 100%;
-    height: 80%;
-}
+/* title thats on top of product images on first page */
 .title{
     text-align: center;
     margin: 0 auto 80px;
@@ -136,6 +116,7 @@ button:hover span {
     line-height: 60px;
     color: #555;
 }
+/* small underline below title */
 .title::after{
     content: '';
     background: #ff523b;
@@ -146,6 +127,26 @@ button:hover span {
     bottom: 0;
     left: 47%;
     transform: translateY(-50%);
+}
+/* product images on first page same for col1 and col2 */
+.col2, .col1{
+    flex-basis:25%;
+    padding:10px ;
+    min-width: 250px;
+    margin-bottom: 50px;
+}
+.col2 img, .col1 img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+.col2 img:hover, .col1 img:hover{
+    transform: scale(1.05);     /* make the image 105% larger when hovered */
+}
+.col2 img:active, .col1 img:active{
+    transform: scale(1.1);          /* make the image 110% larger when clicked */
+    transition: transform 0.1s;       /* make the transition smooth */
 }
 
 /* //////////////////////////////////////////////// FOOTER /////////////////////////////////////////////////// */
