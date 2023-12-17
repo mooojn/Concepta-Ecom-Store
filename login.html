@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="auth.js"></script>
     <div class="Loginmain">
         <div class="Logincontainer">
             <div class="Loginlogo">
@@ -21,11 +22,13 @@
                     <form>
                         <input type="text" name="email" id="Loginemail" class="Logininput"
                             placeholder="Email address"><br><br>
-                        <input type="text" class="Logininput" id="Loginpass" placeholder="Password"><br><br>
-                        <button class="Loginbuttons" id="Loginb1" onclick="event.preventDefault();">Log In</button><br><br>
-                        <p class="Logintext">Forgotten password?</p>
+                        <input type="password" class="Logininput" id="Loginpass" placeholder="Password"><br><br>
+                        <button class="Loginbuttons" id="Loginb1" onclick="login();">Log
+                            In</button><br><br>
                         <hr style="margin-top:9px"><br>
-                        <button class="Loginbuttons" id="Loginaccount" onclick="event.preventDefault();">Create New Account</button>
+                        <button class="Loginbuttons" id="Loginaccount"><a href="SignUp.html"
+                                style="text-decoration: none;">Create New
+                                Account</a></button>
                     </form>
                 </div>
                 <script src="index.js"></script>
@@ -33,7 +36,7 @@
         </div>
         <button class="aboutBtn" onclick="goBack()">Go Back</a></button>
     </div>
-</div>
+    </div>
 </body>
 
 </html>

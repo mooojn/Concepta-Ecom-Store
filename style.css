@@ -448,9 +448,8 @@ background-color: #eb2723;
     line-height: 16px;
 }
 /* password Field */
-#Loginpass{
+/* #Loginpass{
     -webkit-text-security: disc;      /* text hidden/masked */
-}
 
 
 /* for the forgot password link */
