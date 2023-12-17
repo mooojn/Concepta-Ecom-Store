@@ -166,7 +166,6 @@ button:hover span {
 }
 
 .footer_col_1,.footer_col_2,.footer_col_3,.footer_col_4{
-    /* padding-top: 0%; */
     min-width: 250px;
     margin-bottom: 20px;
 }
