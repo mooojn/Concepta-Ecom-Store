@@ -12,12 +12,28 @@
     background-size: cover;
     background-position: center;
 }
-/* logo img */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  /* centering the element */
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+/* naviagation bar */
 .logo{
     width: 150px;
     cursor: pointer;
 }
-/* naviagation bar */
 .navbar{
     width: 85%;
     margin: auto;
@@ -53,24 +69,6 @@
 /* hover bar width max */
 .navbar ul li:hover::after{
     width: 100%;
-}
-/* content just below the navbar setting its position */
-.content{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);  /* centering the element */
-    text-align: center;
-    color: white;
-}
-.content h1{
-    font-size: 70px;
-    margin-top: 80px;
-}
-.content p{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
 }
 /* button intial settings */
 button {
