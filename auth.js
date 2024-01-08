@@ -1,5 +1,5 @@
-var usernames = ['Hamid1999','Mooojn',"Zain12","Fajar32"]
-var passwords = ["1234","1234","1234","1234"]
+var usernames = []
+var passwords = []
 var found = false;
 function login() {
     var email = document.getElementById('Loginemail').value;
